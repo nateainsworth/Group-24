@@ -74,7 +74,7 @@ namespace Group_24.Pages.Users
 
                 command.Connection = connect;
                 //sets all new users to a modlevel of 0
-                command.CommandText = "UPDATE Users SET UserID = @UID, FirstName = @FName, LastName = @LName, EmailAddress = @Email, Password = @Password, ModLevel = @ModLevel";
+                command.CommandText = "UPDATE Users SET FirstName = @FName, LastName = @LName, EmailAddress = @Email, Password = @Password, ModLevel = @ModLevel WHERE UserID = @UID";
 
                 command.Parameters.AddWithValue("@UID", UserRecord.UserID);
                 command.Parameters.AddWithValue("@FName", UserRecord.FirstName);
