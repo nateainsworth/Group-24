@@ -57,7 +57,7 @@ namespace Group_24.Pages.Users
 
         public IActionResult OnPost()
         {
-            string G24database_connection = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=G24Database;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            string G24database_connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nate\source\repos\2\Group-24\Group-24\Data\G24Database.mdf;Integrated Security=True";
             SqlConnection connect = new SqlConnection(G24database_connection);
             connect.Open();
 
